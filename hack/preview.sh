@@ -53,7 +53,7 @@ if echo "$MY_GIT_REPO_URL" | grep -q redhat-appstudio/infra-deployments; then
 fi
 
 # Do not allow to use default github org
-if [ -z "$MY_GITHUB_ORG" ] || [ "$MY_GITHUB_ORG" == "redhat-appstudio-appdata" ]; then
+if [ -z "$MY_GITHUB_ORG" ]; then
     echo "Set MY_GITHUB_ORG environment variable"
     exit 1
 fi
